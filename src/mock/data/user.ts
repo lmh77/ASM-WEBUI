@@ -98,10 +98,14 @@ export const route: Array<IMenubarList> = [
 export const accounts = [
   {
     user: '王小虎',
-    config: '上海'
+    type: 'jingdong',
+    sn: '1',
+    config: '{}'
   },
   {
-    user: '王小虎',
-    config: '上海'
+    user: '刘大刀',
+    type: 'unicom',
+    sn: '1',
+    config: '{}'
   }
 ]

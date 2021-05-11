@@ -54,6 +54,23 @@ mock('/getUser', 'get', (req: IReq) => {
 //   })
 // })
 
+// mock('/api/account/update', 'post', (req: IReq) => {
+//   const { token, account } = JSON.parse(req.body)
+//   const userName = checkToken(token)
+//   if (!userName) {
+//     return mock({
+//       Code: 401,
+//       Msg: '身份认证失败',
+//       Data: ''
+//     })
+//   }
+//   return mock({
+//     Code: 200,
+//     Msg: '',
+//     Data: account.sn
+//   })
+// })
+
 mock('/getRoute', 'get', (req: IReq) => {
   const { token } = JSON.parse(req.body)
   const userName = checkToken(token)

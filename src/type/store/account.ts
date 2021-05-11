@@ -1,6 +1,9 @@
 export interface IAccount {
   user: string
-  config: string
+  name?: string
+  type: string
+  sn: string
+  config?: string
 }
 
 export interface IAccounts {

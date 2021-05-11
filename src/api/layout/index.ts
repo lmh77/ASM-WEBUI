@@ -51,3 +51,11 @@ export function list_account(): Promise<AxiosResponse<IResponse<Array<IAccount>>
     data: { token: store.state.layout.token.ACCESS_TOKEN }
   })
 }
+
+export function update_account(account: IAccount): Promise<AxiosResponse<IResponse<any>>> {
+  return request({
+    url: '/api/account/update',
+    method: 'post',
+    data: { token: store.state.layout.token.ACCESS_TOKEN, account }
+  })
+}
